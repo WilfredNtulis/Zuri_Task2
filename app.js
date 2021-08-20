@@ -2,7 +2,7 @@ const express = require('express');
 var bodyParser = require('body-parser');
 var ejs = require('ejs');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 var sent = false;
 
 app.use('/public', express.static('public'));
